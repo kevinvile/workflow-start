@@ -1,0 +1,23 @@
+@import "bourbon/bourbon"
+@import "neat/neat"
+@import "base/base"
+@import "refills/hero"
+@import "refills/navigation"
+
+body
+	margin: 0
+	font-family: $helvetica
+	font-size: golden-ratio(14px, 1)
+
+section
+	display: flex
+	
+.item 
+	width: auto
+	margin: 5px
+	padding: 20px
+	background-color: blue
+
+.example 
+	.item
+		@include linear-gradient(to top, red, orange)
